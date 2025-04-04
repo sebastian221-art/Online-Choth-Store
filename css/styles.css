@@ -5,6 +5,7 @@
     font-family: sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
 body{
     display: grid;
     grid-template-rows: 0.25fr 0.08fr 0.62fr;
@@ -79,7 +80,7 @@ body{
             margin-right: 5px;
         }
     }
-}
+
 .boton {
     background-color: rgb(29, 29, 29);
     width: 90%;

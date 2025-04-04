@@ -8,16 +8,16 @@
 }
 body{
     display: grid;
-    grid-template-rows: 0.25fr 0.08fr 0.62fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
 }
 
 .modelos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 376px;
     gap: 2%;
-    grid-row: 3;
+    grid-row: 80%;
     padding: 10px;
     overflow: scroll;
     .modelo {
@@ -39,5 +39,120 @@ body{
             margin-bottom: 10px;
             color: rgb(173, 173, 173);
         }
+    }
+}
+
+.boton {
+    overflow-y: scroll;
+    background-color: rgb(29, 29, 29);
+    width: 90%;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    gap: 7px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-51%);
+    padding: 10px;
+    .botones {
+        border-radius: 500px;
+        color: white    ;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+}
+.boton:hover {
+    background-color: rgb(104, 92, 92);
+}
+.boton:focus {
+    background-color: rgb(131, 131, 131);
+}
+.tamaño{
+    padding: 20px;
+}
+.tamaño a {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+    width: fit-content;
+    justify-content: center;
+   
+}
+
+.tamaño a:focus {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+.tamaño a:hover {
+    transition: 0.1s ease;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.tamaño p{
+    padding: 10px;
+}
+.tamaño .gray{
+    background-color: gray;
+}
+.tamaño .gray:hover {
+    transition: 0.1s ease;
+    background-color: rgb(194, 189, 189);
+}
+.tamaño .gray:focus {
+    background-color: rgb(194, 189, 189);
+}
+.tamaño .gray-o{
+    background-color: rgb(83, 81, 81);
+}
+.tamaño .gray-o:hover {
+    transition: 0.1s ease;
+    background-color: rgb(194, 189, 189);
+}
+.tamaño .gray-o:focus {
+    background-color: rgb(194, 189, 189);
+}
+.tamaño .black{
+    background-color: rgb(0, 0, 0);
+}
+.tamaño .black:hover {
+    transition: 0.1s ease;
+    background-color: rgb(194, 189, 189);
+}
+.tamaño .black:focus {
+    background-color: rgb(194, 189, 189);
+}
+.colores{
+    float: right;
+    margin: -53px;
+    padding: 10px;
+    transform: translateX(-27%);
+    border-radius: 30px;
+    a{
+        margin: 7px;
+        padding: 15px;
+        height: 1px;
+        
+    }
+    p{
+        margin: 7px;
+    }
+}
+.number{
+    float: right;
+    margin: -140px;
+    transform: translateX(-112%);
+    .uno{
+    box-shadow:none ;
+    height: -10px;
+    
     }
 }

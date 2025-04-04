@@ -112,27 +112,35 @@ body{
     }
 }
 .modelos {
+    text-decoration: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2%;
     grid-row: 3;
     padding: 10px;
     overflow: scroll;
+    a{
+        text-decoration: none;
+        color: black;
+    }
     .modelo {
         padding: 2%;
         width: fit-content;
         img {
+            text-decoration: none;
             margin: 10px;
             align-content: center;
             width: 90%;
             border-radius: 20px;
         }
         .nombre {
+            text-decoration: none;
             font-size: 1em;
             margin-bottom: 10px;
             color: rgb(0, 0, 0);
         }
         .dueño {
+            text-decoration: none;
             font-size: 0.8em;
             margin-bottom: 10px;
             color: rgb(173, 173, 173);

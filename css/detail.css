@@ -20,6 +20,8 @@ body{
     grid-row: 80%;
     padding: 10px;
     overflow: scroll;
+    
+    
     .modelo {
         padding: 2%;
         width: fit-content;
@@ -98,52 +100,67 @@ body{
     color: white;
 }
 .tamaño p{
+    margin: 9px;
     padding: 10px;
 }
 .tamaño .gray{
     background-color: gray;
 }
 .tamaño .gray:hover {
+    color:  rgb(194, 189, 189) ;
     transition: 0.1s ease;
     background-color: rgb(194, 189, 189);
 }
 .tamaño .gray:focus {
+    color:rgb(194, 189, 189) ;
     background-color: rgb(194, 189, 189);
 }
 .tamaño .gray-o{
     background-color: rgb(83, 81, 81);
 }
 .tamaño .gray-o:hover {
+    color:  rgb(194, 189, 189) ;
     transition: 0.1s ease;
     background-color: rgb(194, 189, 189);
 }
 .tamaño .gray-o:focus {
+    color:rgb(194, 189, 189) ;
     background-color: rgb(194, 189, 189);
 }
 .tamaño .black{
     background-color: rgb(0, 0, 0);
 }
 .tamaño .black:hover {
+    color:  rgb(194, 189, 189) ;
     transition: 0.1s ease;
     background-color: rgb(194, 189, 189);
 }
 .tamaño .black:focus {
+    color:rgb(194, 189, 189) ;
     background-color: rgb(194, 189, 189);
 }
 .colores{
+    overflow: hidden;
     float: right;
-    margin: -53px;
-    padding: 10px;
-    transform: translateX(-27%);
+    margin: -60px;
+    padding: 9px;
+    transform: translateX(-20%);
     border-radius: 30px;
     a{
+        padding: auto;
+        margin: -2px;
+    }
+    .gray{
+        margin: 7px ;
+        color: gray;
+    }
+    .gray-o{
         margin: 7px;
-        padding: 15px;
-        height: 1px;
-        
+        color:  rgb(83, 81, 81);
     }
     p{
-        margin: 7px;
+        padding: 9px;
+        margin: 9px;
     }
 }
 .number{
@@ -156,3 +173,10 @@ body{
     
     }
 }
+.number .uno:hover {
+    transition: 0.1s ease;
+    background-color: white;
+    color: black;
+}
+
+

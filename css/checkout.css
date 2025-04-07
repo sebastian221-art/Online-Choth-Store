@@ -328,6 +328,7 @@ body{
         transform: translateX(8%) translateY(30%);
     }
     .cantidad{
+        padding: -18px;
         float: right;
         transform: translateY(-70%) translateX(-40%);
     }

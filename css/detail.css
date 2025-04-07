@@ -107,7 +107,7 @@ body{
 .tamaño .numero {
     float: right;
     margin: -140px;
-    transform: translateX(-117%) translateY(40%);
+    transform: translateX(-47%) translateY(40%);
 }
 .numero :hover{
     background-color: black;
@@ -179,7 +179,7 @@ body{
     float: right;
     margin: -66px;
     padding: 12px;
-    transform: translateX(-20%);
+    transform: translateX(28%);
     border-radius: 30px;
     a{
         padding: 10px;
@@ -198,6 +198,7 @@ body{
         margin: 9px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     * {
         margin: 0;
@@ -301,6 +302,9 @@ body{
         
     
     }
+    #info{
+        color: black;
+    }
     
 
     .boton {
@@ -330,19 +334,15 @@ body{
 
     .tamaño{
         padding: 20px;
-        .numero {
-            float: left;
-            margin: 1px;
-            padding: 67px;
-            transform: translateX(-912%);
-        }
+        transform: translateX(34%) translateY(-39%);
         
     }
+   
 
     .tamaño .numero {
         float: right;
         margin: -140px;
-        transform: translateX(-592%);
+        transform: translateX(-1293%);
     }
     .numero :hover{
         background-color: black;
@@ -425,7 +425,7 @@ body{
         float: right;
         margin: -66px;
         padding: 12px;
-        transform: translateX(-700%);
+        transform: translateX(-910%)translateY(-260%);
         border-radius: 30px;
     }
 

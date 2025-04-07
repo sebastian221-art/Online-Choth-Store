@@ -54,4 +54,4 @@ La tienda cuenta con una barra de búsqueda, botones de navegación, filtros por
 - `css/styles.css` – Hoja de estilos personalizada  
 - `storage/img/` – Carpeta con las imágenes de los productos  
 
-> **Nota:** Asegúrate de mantener las rutas de imágenes correctas al desplegar.
+## Enlace de la pagina web (https://splendid-madeleine-d993f6.netlify.app)

@@ -1,41 +1,50 @@
+/* Estilos base para todos los elementos */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    box-sizing: border-box; /* Hace que el padding y border no afecten el ancho/alto total */
+    font-family: sans-serif; /* Fuente predeterminada */
+    font-optical-sizing: auto; /* Ajuste óptico de fuente */
+    font-style: normal; /* Estilo de fuente normal */
 }
+
+/* Estilo general del body: layout con grid */
 body{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr; /* Tres filas de igual proporción */
+    height: 100%; 
     width: 100%;
 }
+
+/* Contenedor de íconos especiales (corazón y salida) */
 .especiales{
     display: flex;
     padding: 8px;
-    transform: translateY(-194%);
+    transform: translateY(-194%); /* Mueve el contenedor hacia arriba */
+
     .corazon{
         background-color: white;
         margin: 40px;
         padding: 7.5px;
-        border-radius: 60px;
+        border-radius: 60px; /* Forma circular */
         width: fit-content;
         height: fit-content;
         color: black;
-        transform: translateY(-88%) translateX(655%);
+        transform: translateY(-88%) translateX(655%); /* Posiciona el ícono */
     }
+
     .corazon:hover {
         transition: 0.1s ease;
         background-color: white;
-        color: red;
+        color: red; /* Al pasar el mouse cambia el color */
     }
+
     .corazon:focus{
         transition: 0.1 ease;
         background-color: white;
-        color: red;
+        color: red; /* Al hacer foco cambia el color */
     }
+
     .salida{
         background-color: white;
         margin: 40px;
@@ -47,33 +56,40 @@ body{
         transform: translateY(-88%) translateX(-330%);
     }
 }
+
+/* Contenedor de los modelos */
 .modelos {
     display: grid;
-    grid-template-columns: 376px;
-    grid-row: 80%;
+    grid-template-columns: 376px; /* Una columna fija */
+    grid-row: 80%; /* Altura del grid */
     padding: 10px;
+
     .modelo {
         padding: 2%;
         width: fit-content;
+
         img {
             margin: 10px;
             align-content: center;
             width: 90%;
-            border-radius: 20px;
+            border-radius: 20px; /* Bordes redondeados */
         }
+
         .nombre {
             font-size: 1em;
             margin-bottom: 10px;
             color: rgb(0, 0, 0);
         }
+
         .dueño {
             font-size: 0.8em;
             margin-bottom: 10px;
-            color: rgb(173, 173, 173);
+            color: rgb(173, 173, 173); /* Gris claro */
         }
     }
 }
 
+/* Botón flotante inferior */
 .boton {
     overflow-y: scroll;
     width: 90%;
@@ -87,18 +103,20 @@ body{
     transform: translateX(-51%);
     padding: 10px;
     z-index: 10000;
+
     .botones {
         border-radius: 500px;
-        color: white    ;
+        color: white;
         padding: 5px;
         text-decoration: none;
     }
-    
 }
+
 .boton:focus {
     background-color: rgb(131, 131, 131);
 }
 
+/* Contenedor de tallas */
 .tamaño {
     padding: 70px;
     transform: translateX(-13%)translateY(-10%);
@@ -109,9 +127,11 @@ body{
     margin: -140px;
     transform: translateX(-47%) translateY(40%);
 }
+
 .numero :hover{
     background-color: black;
 }
+
 .tamaño a {
     color: rgb(0, 0, 0);
     background-color: white;
@@ -122,83 +142,100 @@ body{
     white-space: nowrap;
     width: fit-content;
     justify-content: center;
-   
 }
-
 
 .tamaño a:focus {
     background-color: rgb(29, 29, 29);
     color: white;
 }
+
 .tamaño a:hover {
     transition: 0.1s ease;
     background-color: rgb(0, 0, 0);
     color: white;
 }
+
 .tamaño p{
     margin: 9px;
     padding: 10px;
 }
+
+/* Estilos de colores */
 .tamaño .gray{
     background-color: gray;
 }
+
 .tamaño .gray:hover {
-    color:  rgb(194, 189, 189) ;
+    color:  rgb(194, 189, 189);
     transition: 0.1s ease;
     background-color: rgb(194, 189, 189);
 }
+
 .tamaño .gray:focus {
-    color:rgb(194, 189, 189) ;
+    color:rgb(194, 189, 189);
     background-color: rgb(194, 189, 189);
 }
+
 .tamaño .gray-o{
     background-color: rgb(83, 81, 81);
 }
+
 .tamaño .gray-o:hover {
-    color:  rgb(194, 189, 189) ;
+    color:  rgb(194, 189, 189);
     transition: 0.1s ease;
     background-color: rgb(194, 189, 189);
 }
+
 .tamaño .gray-o:focus {
-    color:rgb(194, 189, 189) ;
+    color:rgb(194, 189, 189);
     background-color: rgb(194, 189, 189);
 }
+
 .tamaño .black{
     background-color: rgb(0, 0, 0);
 }
+
 .tamaño .black:hover {
-    color:  rgb(194, 189, 189) ;
+    color:  rgb(194, 189, 189);
     transition: 0.1s ease;
     background-color: rgb(194, 189, 189);
 }
+
 .tamaño .black:focus {
-    color:rgb(194, 189, 189) ;
+    color:rgb(194, 189, 189);
     background-color: rgb(194, 189, 189);
 }
+
+/* Contenedor de selección de colores */
 .colores{
     float: right;
     margin: -66px;
     padding: 12px;
     transform: translateX(28%);
     border-radius: 30px;
+
     a{
         padding: 10px;
         margin: -2px;
     }
+
     .gray{
-        margin: 7px ;
+        margin: 7px;
         color: gray;
     }
+
     .gray-o{
         margin: 7px;
         color:  rgb(83, 81, 81);
     }
+
     p{
         padding: 9px;
         margin: 9px;
     }
 }
 
+/* Media query para pantallas grandes */
 @media screen and (min-width: 1024px) {
     * {
         margin: 0;
@@ -262,21 +299,17 @@ body{
         grid-row: 80%;
         padding: 10px;
         transform: translateX(18%);
-        
     }
 
     .modelos .modelo {
         padding: 2%;
-        
-        
     }
+
     #info{
         font-size: 1rem;
         color: rgb(0, 0, 0);
-        
-        
-    
     }
+
     .modelos .modelo img {
         margin: 10px;
         width: 150%;
@@ -299,13 +332,11 @@ body{
         color: rgb(173, 173, 173);
         padding: 0px;
         transform: translateY(-90%) translateX(84%);
-        
-    
     }
+
     #info{
         color: black;
     }
-    
 
     .boton {
         overflow-y: scroll;
@@ -335,15 +366,14 @@ body{
     .tamaño{
         padding: 20px;
         transform: translateX(34%) translateY(-39%);
-        
     }
-   
 
     .tamaño .numero {
         float: right;
         margin: -140px;
         transform: translateX(-1293%);
     }
+
     .numero :hover{
         background-color: black;
     }
@@ -449,5 +479,4 @@ body{
         margin: 9px;
     }
 }
-
 

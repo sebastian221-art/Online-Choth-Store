@@ -14,14 +14,12 @@ body{
 }
 .especiales{
     display: flex;
-    gap: 2%;
-    padding: 1px;
-    overflow: scroll;
+    padding: 8px;
     transform: translateY(-194%);
     .corazon{
         background-color: white;
         margin: 40px;
-        padding: 8px;
+        padding: 7.5px;
         border-radius: 60px;
         width: fit-content;
         height: fit-content;
@@ -52,12 +50,8 @@ body{
 .modelos {
     display: grid;
     grid-template-columns: 376px;
-    gap: 2%;
     grid-row: 80%;
     padding: 10px;
-    overflow: scroll;
-    
-    
     .modelo {
         padding: 2%;
         width: fit-content;
@@ -86,10 +80,7 @@ body{
     border-radius: 50px;
     color: white;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
-    overflow-y: scroll;
-    gap: 7px;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -108,11 +99,10 @@ body{
 }
 .tamaño{
     padding: 20px;
-    .number {
+    .numero {
         float: right;
         margin: -140px;
         transform: translateX(-112%);
-        
     }
     
 }
@@ -180,11 +170,10 @@ body{
     background-color: rgb(194, 189, 189);
 }
 .colores{
-    overflow: hidden;
     float: right;
-    margin: -60px;
-    padding: 9px;
-    transform: translateX(-30%);
+    margin: -66px;
+    padding: 12px;
+    transform: translateX(-20%);
     border-radius: 30px;
     a{
         padding: 10px;
@@ -203,4 +192,235 @@ body{
         margin: 9px;
     }
 }
+@media screen and (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    body {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100%;
+        width: 100%;
+    }
+
+    .especiales {
+        display: flex;
+        padding: 8px;
+        transform: translateY(-194%) translateX(20%);
+    }
+
+    .especiales .corazon {
+        background-color: white;
+        margin: 40px;
+        padding: 7.5px;
+        border-radius: 60px;
+        width: fit-content;
+        height: fit-content;
+        color: black;
+        transform: translateY(-88%) translateX(825%);
+    }
+
+    .especiales .corazon:hover {
+        transition: 0.1s ease;
+        background-color: white;
+        color: red;
+    }
+
+    .especiales .corazon:focus {
+        transition: 0.1 ease;
+        background-color: white;
+        color: red;
+    }
+
+    .especiales .salida {
+        background-color: white;
+        margin: 40px;
+        padding: 8px;
+        border-radius: 60px;
+        width: fit-content;
+        height: fit-content;
+        color: black;
+        transform: translateY(-88%) translateX(-330%);
+    }
+
+    .modelos {
+        display: grid;
+        grid-template-columns: 376px;
+        grid-row: 80%;
+        padding: 10px;
+        transform: translateX(18%);
+    }
+
+    .modelos .modelo {
+        padding: 2%;
+        width: fit-content;
+    }
+
+    .modelos .modelo img {
+        margin: 10px;
+        align-content: center;
+        width: 120%;
+        height: 90%;
+        border-radius: 20px;
+    }
+
+    .modelos .modelo .nombre {
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: rgb(0, 0, 0);
+    }
+
+    .modelos .modelo .dueño {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+        color: rgb(173, 173, 173);
+    }
+
+    .boton {
+        overflow-y: scroll;
+        width: 90%;
+        border-radius: 50px;
+        color: white;
+        display: flex;
+        margin-bottom: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-21%);
+        padding: 10px;
+    }
+
+    .boton .botones {
+        border-radius: 500px;
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .boton:focus {
+        background-color: rgb(131, 131, 131);
+    }
+
+    .tamaño {
+        padding: 70px;
+        transform: translateX(13%);
+    }
+
+    .tamaño .numero {
+        float: right;
+        margin: -140px;
+        transform: translateX(-592%);
+    }
+    .numero :hover{
+        background-color: black;
+    }
+
+    .tamaño a {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        padding: 10px;
+        white-space: nowrap;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .tamaño a:focus {
+        background-color: rgb(29, 29, 29);
+        color: white;
+    }
+
+    .tamaño a:hover {
+        transition: 0.1s ease;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .tamaño p {
+        margin: 9px;
+        padding: 10px;
+    }
+
+    .tamaño .gray {
+        background-color: gray;
+    }
+
+    .tamaño .gray:hover {
+        color: rgb(194, 189, 189);
+        transition: 0.1s ease;
+        background-color: rgb(194, 189, 189);
+    }
+
+    .tamaño .gray:focus {
+        color: rgb(194, 189, 189);
+        background-color: rgb(194, 189, 189);
+    }
+
+    .tamaño .gray-o {
+        background-color: rgb(83, 81, 81);
+    }
+
+    .tamaño .gray-o:hover {
+        color: rgb(194, 189, 189);
+        transition: 0.1s ease;
+        background-color: rgb(194, 189, 189);
+    }
+
+    .tamaño .gray-o:focus {
+        color: rgb(194, 189, 189);
+        background-color: rgb(194, 189, 189);
+    }
+
+    .tamaño .black {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .tamaño .black:hover {
+        color: rgb(194, 189, 189);
+        transition: 0.1s ease;
+        background-color: rgb(194, 189, 189);
+    }
+
+    .tamaño .black:focus {
+        color: rgb(194, 189, 189);
+        background-color: rgb(194, 189, 189);
+    }
+
+    .colores {
+        float: right;
+        margin: -66px;
+        padding: 12px;
+        transform: translateX(-300%);
+        border-radius: 30px;
+    }
+
+    .colores a {
+        padding: 10px;
+        margin: -2px;
+    }
+
+    .colores .gray {
+        margin: 7px;
+        color: gray;
+    }
+
+    .colores .gray-o {
+        margin: 7px;
+        color: rgb(83, 81, 81);
+    }
+
+    .colores p {
+        padding: 9px;
+        margin: 9px;
+    }
+}
+
 

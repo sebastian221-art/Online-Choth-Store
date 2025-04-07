@@ -7,12 +7,15 @@
     font-style: normal;
 }
 body{
+    display: flex;
     display: grid;
-    grid-template-rows: 0.25fr 0.08fr 0.62fr;
+    grid-template-rows: 0.10fr 1fr 1fr;
     height: 100%;
     width: 100%;
 }
 .presentacion {
+    display: flex;
+    display: block;
     align-items: center;
     grid-row: 1 / 2;
     padding-top: 5%;
@@ -33,12 +36,13 @@ body{
         margin: 14px; 
     }
     h1{
-        transform: translateX(33%);
+
+        display: block;
+        transform: translateX(30%);
     }
  
 }
 .boton {
-    overflow-y: scroll;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -55,6 +59,7 @@ body{
     color: black;
 }
 .compras{
+    display: flex;
     display: inline;
     display: inline-block;
     font-size: 1.08rem;
@@ -74,16 +79,17 @@ body{
         }
     }
     .nombre{
-        transform: translateY(-740%) translateX(30%);
+        transform: translateY(-680%) translateX(35%);
     }
     .dueño {
         font-size: 0.8em;
         padding: 6px;
         color: rgb(173, 173, 173);
-        transform: translateY(-520%) translateX(29%);
+        transform: translateY(-520%) translateX(34%);
     }
     .precio{
-        transform: translateY(-520%) translateX(30%);
+        display: block;
+        transform: translateY(-500%) translateX(35%);
     }
     .ropa{
         img{
@@ -93,19 +99,57 @@ body{
         border-radius: 25px;
         }
     }
+    .puntos{
+        color: black;
+        float: right;
+        transform: translateX(210%)translateY(-300%);
+    }
+    .signo{
+        float: right;
+        transform: translateX(320%) translateY(-40%);
+    }
+    .signo :hover{
+        display: flex;
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+
+    }
+    .signo :focus{
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        display: flex;
+    }
+    #uno :hover{
+        color: black;
+        border-radius: 25px 25px;
+        display: flex;
+        background-color: white;
+    }
+    #uno{
+        box-shadow: none;
+        color:black;
+        
+    }
 }
 .informacion{
+    display: flex;
+    display: block;
     a{
         padding: 70px;
         margin: 0px;
         padding: 30px;
     }
+    .titulo0{
+        transform: translateX(8%) translateY(-50%);
+    }
     .titulo{
-        transform: translateX(7%) ;
+        transform: translateX(8%) translateY(30%);
     }
     .cantidad{
         float: right;
-        transform: translateY(-69%) translateX(-70%);
+        transform: translateY(-70%) translateX(-40%);
     }
     .cero-1{
         transform: translateY(-40%) translateX(81%);
@@ -114,6 +158,215 @@ body{
         transform: translateY(-110%) translateX(81%);
     }
     .final{
-        transform: translateY(-60%) translateX(75%);
+        transform: translateY(-60%) translateX(72%);
+    }
+    .titulo2{
+        transform: translateY(49%) translateX(8%);
+    }
+    .titulo3{
+        transform: translateY(-19%) translateX(8%);
+    }
+    .titulo4{
+        transform: translateY(50%) translateX(8%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    body {
+        display: flex;
+        display: grid;
+        grid-template-rows: 0.10fr 1fr 1fr;
+        height: 100%;
+        width: 100%;
+    }
+
+    .presentacion {
+        display: flex;
+        display: block;
+        align-items: center;
+        grid-row: 1 / 2;
+        padding-top: 5%;
+        padding-left: 3%;
+    }
+
+    .presentacion .opciones {
+        float: right;
+        box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 25px;
+        padding: 13px;
+        transform: translateX(-90%);
+    }
+
+    .presentacion .salida {
+        box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 25px;
+        padding: 15px;
+        margin: 14px;
+    }
+
+    .presentacion h1 {
+        display: block;
+        transform: translateX(30%);
+    }
+
+    .boton {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-19%);
+        padding: 10px;
+    }
+
+    .number .uno:hover {
+        transition: 0.1s ease;
+        background-color: white;
+        color: black;
+    }
+
+    .compras {
+        display: flex;
+        display: inline;
+        display: inline-block;
+        font-size: 1.08rem;
+    }
+    .ropa{
+        padding: 90px;
+    }
+
+    .compras .number {
+        float: right;
+        margin: -148px;
+        transform: translateX(-242%) translateY(80%);
+    }
+
+    .compras .number a {
+        border-radius: 25px 25px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .compras .number .uno {
+        box-shadow: 0px;
+        height: -10px;
+    }
+
+    .compras .nombre {
+        transform: translateY(-680%) translateX(35%);
+    }
+
+    .compras .dueño {
+        font-size: 0.8em;
+        padding: 6px;
+        color: rgb(173, 173, 173);
+        transform: translateY(-520%) translateX(34%);
+    }
+
+    .compras .precio {
+        display: block;
+        transform: translateY(-500%) translateX(35%);
+    }
+
+    .compras .ropa img {
+        margin: 28px;
+        width: 100px;
+        height: 110px;
+        border-radius: 25px;
+    }
+
+    .compras .puntos {
+        color: black;
+        float: right;
+        transform: translateX(-420%) translateY(-300%);
+    }
+
+    .compras .signo {
+        float: right;
+        transform: translateX(-320%) translateY(-40%);
+    }
+
+    .compras .signo :hover {
+        display: flex;
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+    }
+
+    .compras .signo :focus {
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .compras #uno :hover {
+        color: black;
+        border-radius: 25px 25px;
+        display: flex;
+        background-color: white;
+    }
+
+    .compras #uno {
+        box-shadow: none;
+        color: black;
+    }
+
+    .informacion {
+        display: flex;
+        display: block;
+    }
+
+    .informacion a {
+        padding: 65px;
+        margin: 0px;
+    }
+
+    .informacion .titulo0 {
+        transform: translateX(8%) translateY(-50%);
+    }
+
+    .informacion .titulo {
+        transform: translateX(8%) translateY(30%);
+    }
+
+    .informacion .cantidad {
+        float: right;
+        transform: translateY(-70%) translateX(-260%);
+    }
+
+    .informacion .cero-1 {
+        transform: translateY(-40%) translateX(81%);
+    }
+
+    .informacion .cero-2 {
+        transform: translateY(-110%) translateX(81%);
+    }
+
+    .informacion .final {
+        transform: translateY(-60%) translateX(79%);
+    }
+
+    .informacion .titulo2 {
+        transform: translateY(49%) translateX(8%);
+    }
+
+    .informacion .titulo3 {
+        transform: translateY(-19%) translateX(8%);
+    }
+
+    .informacion .titulo4 {
+        transform: translateY(50%) translateX(8%);
     }
 }
